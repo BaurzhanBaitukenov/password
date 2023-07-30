@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Add the Bootstrap navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Home</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/josephus">Josephus Numbers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/gcd">GCD</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h1>Password Encryption using Mathematical Algorithms</h1>
+
+    <p>
+        Welcome to our website! In our quest for enhanced data security, we employ two fascinating mathematical algorithms for password encryption: Josephus Numbers and GCD (Greatest Common Divisor).
+    </p>
+
+    <h2>Josephus Numbers</h2>
+
+    <p>
+        The Josephus Numbers algorithm is inspired by a famous ancient legend. In this method, we arrange characters of the password in a circle and iteratively eliminate every K-th character until only one character remains. The last standing character forms the encrypted password. This process provides an intriguing and secure way to transform plaintext into ciphertext.
+    </p>
+
+    <h2>GCD (Greatest Common Divisor)</h2>
+
+    <p>
+        The GCD algorithm, or Greatest Common Divisor, is a fundamental concept in number theory. In this technique, we compute the GCD of two numbers derived from the decimal ASCII values of password characters. The resulting GCD value determines how many times we mix the characters of a predefined set. The mixed characters represent the encrypted password.
+    </p>
+
+    <h2>Why these Algorithms?</h2>
+
+    <p>
+        The Josephus Numbers and GCD algorithms are fascinating due to their mathematical elegance and intriguing properties. These algorithms offer strong encryption that is challenging to decipher without knowledge of the initial parameters. This ensures robust password protection and adds an extra layer of security to sensitive data.
+    </p>
+
+    <h2>Best Practices for Password Security</h2>
+
+    <p>
+        While our encryption methods enhance security, we recommend adhering to best practices for password protection:
+    </p>
+
+    <ul>
+        <li>Use strong and unique passwords for each account.</li>
+        <li>Avoid using easily guessable passwords, such as "123456" or "password."</li>
+        <li>Consider using password managers to generate and store complex passwords securely.</li>
+        <li>Regularly update passwords and avoid reusing them across multiple sites.</li>
+    </ul>
+
+</div>
+
+<!-- Add Bootstrap JS and jQuery scripts (recommended to place them just before closing body tag) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

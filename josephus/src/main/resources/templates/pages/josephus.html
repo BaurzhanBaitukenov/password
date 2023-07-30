@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Josephus Numbers</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Home</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/josephus">Josephus Numbers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gcd">Gcd</a>      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h1>Josephus Numbers Password Generator</h1>
+  <form action="/generatePassword" method="post">
+    <label for="numberOfNumbers">Enter the number of Josephus numbers:</label>
+    <input type="number" id="numberOfNumbers" name="numberOfNumbers" required>
+    <input type="submit" class="btn btn-primary" value="Generate Password">
+  </form>
+
+  <h1 class="mt-4">Encrypt Existing Password by Josephus Numbers:</h1>
+  <form action="/encryptPassword" method="post">
+    <label for="existingPassword">Enter your existing password:</label>
+    <input type="password" id="existingPassword" name="existingPassword" required>
+    <input type="submit" class="btn btn-success" value="Encrypt Password">
+  </form>
+</div>
+</body>
+</html>
